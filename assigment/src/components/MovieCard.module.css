@@ -1,0 +1,68 @@
+.movieCard {
+    background-color: white;
+    border-radius: 0.25rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .moviePoster {
+    height: 16rem;
+    overflow: hidden;
+  }
+  
+  .moviePoster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .noPoster {
+    width: 100%;
+    height: 100%;
+    background-color: #edf2f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .noPoster p {
+    color: #718096;
+  }
+  
+  .movieInfo {
+    padding: 1rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .movieTitle {
+    font-weight: bold;
+    font-size: 1.125rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .movieYear {
+    color: #718096;
+    margin-bottom: 1rem;
+  }
+  
+  .moreInfoButton {
+    margin-top: auto;
+    display: inline-block;
+    background-color: #4299e1;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.2s;
+  }
+  
+  .moreInfoButton:hover {
+    background-color: #3182ce;
+  }
+  

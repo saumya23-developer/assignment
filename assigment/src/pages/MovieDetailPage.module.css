@@ -1,0 +1,157 @@
+.movieDetailPage {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .backButton {
+    background-color: transparent;
+    border: none;
+    color: #4299e1;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    margin-bottom: 2rem;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.3s;
+  }
+  
+  .backButton:hover {
+    color: #3182ce;
+    text-decoration: underline;
+  }
+  
+  .movieDetailContent {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  @media (min-width: 768px) {
+    .movieDetailContent {
+      flex-direction: row;
+    }
+  }
+  
+  .moviePosterContainer {
+    flex-shrink: 0;
+    margin-bottom: 1.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .moviePosterContainer {
+      width: 300px;
+      margin-bottom: 0;
+    }
+  }
+  
+  .moviePoster {
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .noPoster {
+    width: 100%;
+    height: 450px;
+    background-color: #edf2f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #718096;
+    border-radius: 0.5rem;
+  }
+  
+  .movieInfoContainer {
+    flex: 1;
+  }
+  
+  .movieTitle {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .movieYear {
+    font-weight: normal;
+    color:rgb(80, 100, 131);
+  }
+  
+  .movieMeta {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+    gap: 1rem;
+  }
+  
+  .movieRated,
+  .movieRuntime,
+  .movieGenre {
+    color:rgb(4, 21, 49);
+    background-color:rgb(160, 196, 233);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .favoriteButton {
+    display: inline-block;
+    background-color: #4299e1;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+    transition: background-color 0.3s;
+  }
+  
+  .favoriteButton:hover {
+    background-color: #3182ce;
+  }
+  
+  .isFavorite {
+    background-color: #f56565;
+  }
+  
+  .isFavorite:hover {
+    background-color: #e53e3e;
+  }
+  
+  .movieDetailSection {
+    margin-bottom: 2rem;
+  }
+  
+  .movieDetailSection h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+    color: #333;
+  }
+  
+  .ratingsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .rating {
+    display: flex;
+    gap: 0.75rem;
+  }
+  
+  .ratingSource {
+    font-weight: bold;
+  }
+  
+  .loading, .errorMessage {
+    font-size: 1.2rem;
+    color: #333;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
