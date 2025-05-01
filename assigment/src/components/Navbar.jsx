@@ -4,7 +4,7 @@ import styles from './Navbar.module.css';
 
 const Navbar = () => {
   return (
-    <header className={styles.header}>
+    <nav className={styles.navbar}>
       <div className={styles.container}>
         <Link to="/" className={styles.logo}>Movie Browser</Link>
         <nav>
@@ -14,7 +14,7 @@ const Navbar = () => {
           </ul>
         </nav>
       </div>
-    </header>
+    </nav>
   );
 };
 
